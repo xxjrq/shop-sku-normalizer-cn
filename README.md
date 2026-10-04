@@ -15,7 +15,7 @@
 
 提供含 `商品名称`、`颜色`、`尺寸`、`型号` 四列的表格、CSV、TSV 或文本。输出依次为统一命名表、重复/缺失规格报告与 CSV 导入草稿。草稿含“待确认原因”列；重复组合中的所有行均标为“待确认”。缺少关键字段时，Skill 会指出缺失并停止生成可导入草稿。
 
-成功和失败样例分别见 [fixtures/success-products.tsv](fixtures/success-products.tsv) 与 [fixtures/failure-missing-field.tsv](fixtures/failure-missing-field.tsv)。
+成功和失败样例分别见 [fixtures/success-products.txt](fixtures/success-products.txt) 与 [fixtures/failure-missing-field.txt](fixtures/failure-missing-field.txt)。
 
 ## 使用
 

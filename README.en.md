@@ -15,7 +15,7 @@ Turn a messy product name, color, size, and model table into consistent naming, 
 
 Provide a table, CSV, TSV, or plain text with `商品名称` (product name), `颜色` (color), `尺寸` (size), and `型号` (model). The output is a normalized naming table, an issue report, and a CSV import draft. The draft includes a `待确认原因` (reason for review) column, and every duplicate row is marked `待确认` (needs review). If a key field is absent, the skill reports it and does not make an importable draft.
 
-See [success fixture](fixtures/success-products.tsv) and [failure fixture](fixtures/failure-missing-field.tsv). Run `bash scripts/self-test.sh` to validate the package structure, metadata, image dimensions, and fixture shapes. It does not simulate the Markdown workflow's real behavior.
+See [success fixture](fixtures/success-products.txt) and [failure fixture](fixtures/failure-missing-field.txt). Run `bash scripts/self-test.sh` to validate the package structure, metadata, image dimensions, and fixture shapes. It does not simulate the Markdown workflow's real behavior.
 
 ## Source and license
 

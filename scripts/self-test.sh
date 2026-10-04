@@ -4,7 +4,7 @@ set -euo pipefail
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$root"
 
-required=(SKILL.md manifest.yaml agents/openai.yaml README.md README.en.md LICENSE icon-512.png assets/promo-1600x900.png fixtures/success-products.tsv fixtures/failure-missing-field.tsv scripts/self-test.sh)
+required=(SKILL.md manifest.yaml agents/openai.yaml README.md README.en.md LICENSE icon-512.png assets/promo-1600x900.png fixtures/success-products.txt fixtures/failure-missing-field.txt scripts/self-test.sh)
 for path in "${required[@]}"; do
   [[ -f "$path" ]] || { echo "FAIL: missing $path" >&2; exit 1; }
 done
@@ -39,8 +39,8 @@ assert png_size('assets/promo-1600x900.png') == (1600, 900), 'promo must be 1600
 def rows(path):
     return Path(path).read_text(encoding='utf-8').splitlines()
 
-ok = rows('fixtures/success-products.tsv')
-bad = rows('fixtures/failure-missing-field.tsv')
+ok = rows('fixtures/success-products.txt')
+bad = rows('fixtures/failure-missing-field.txt')
 assert len(ok) == 5 and all(len(r.split('\t')) == 4 for r in ok), 'success fixture shape'
 assert len(bad) == 2 and bad[1].split('\t')[1] == '', 'failure fixture must have missing color'
 assert ok[1] == ok[2], 'success fixture must contain a duplicate group for review handling'

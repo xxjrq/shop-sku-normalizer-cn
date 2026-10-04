@@ -31,4 +31,4 @@ description: 整理商家提供的至多100行商品名称、颜色、尺寸和�
 
 ## 示例
 
-参见 `fixtures/success-products.tsv` 与 `fixtures/failure-missing-field.tsv`：前者可得到命名、问题报告和草稿；后者必须报告“颜色”缺失，而不能补出颜色。
+参见 `fixtures/success-products.txt` 与 `fixtures/failure-missing-field.txt`：前者可得到命名、问题报告和草稿；后者必须报告“颜色”缺失，而不能补出颜色。

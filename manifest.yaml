@@ -2,7 +2,7 @@ slug: shop-sku-normalizer-cn
 schema_version: 1
 name: shop-sku-normalizer-cn
 display_name: 商品规格与SKU整理
-version: 1.0.0
+version: 1.0.1
 short_description: 整理商品规格并输出统一命名、重复缺失报告与可复核导入草稿
 description: 整理商家提供的至多100行商品名称、颜色、尺寸和型号资料，输出统一命名表、重复与缺失规格报告及含待确认原因的CSV导入草稿；保留原字段和行顺序，重复组所有行均需确认，缺少关键值时先请求补齐，不读取店铺后台。
 repository: https://github.com/xxjrq/shop-sku-normalizer-cn
